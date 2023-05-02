@@ -1,7 +1,7 @@
 # React-native-training-rep
 A repository just to learn some react features and things.
 
-This repository is made to learn some React native features. Here you will build simple mobile app.
+This repository is made to learn some React native features. Here you will build simple CRUD mobile app for learning english language that will allow you to store words you have learnt.
 
 ### Stack
 - yarn - package manager we will use for this project, so check if it's installed
