@@ -11,7 +11,15 @@ This repository is made to learn some React native features. Here you will build
 
 ## Repository overview
 - NativeApp - folder with app
-	- Should be filled up
+- NativeApp/.gitignore - contains what should be ignored by Git
+- NativeApp/yarn.lock - standard generated file by yarn
+- NativeApp/package.json - file that contains all packages that should be installed to run this project.
+- NativeApp/assets - a resource folder for storing all images, vectors, fonts, etc.
+		icon.png, adaptive-icon.png, favicon.png, splash.png - images, icons
+- NativeApp/src - this folder is the main container of all the code inside your application.
+	App.js - the main component that runs your entire application.
+	app.json - the file used to configure your own application, its configuration.
+	babel.config.js - the file thanks to which we can use JSX code.
 - README.md - This Readme file
 - TODO.md - file with tasks 
 
