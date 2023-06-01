@@ -5,9 +5,11 @@ import homeData from './homeData';
 import Icon from 'react-native-vector-icons/AntDesign';
 import { BackgroundImage } from 'react-native-elements/dist/config';
 import Header from './Header';
+import { useNavigation } from '@react-navigation/native';
 
 const MyIcon = <Icon name="delete" size={30} color="red" />;
 export default function Home() {
+  const navigation = useNavigation();
   return (
     <View style={styles.main}>
       <Header />
@@ -18,7 +20,8 @@ export default function Home() {
             <TouchableOpacity size={40} style={styles.icon}>
             <Icon name="delete" size={35} color="rgba(146, 69, 236, 1)" /> 
             </TouchableOpacity>
-            <TouchableOpacity size={40} style={styles.icon2}>
+            <TouchableOpacity onPress={() =>
+                navigation.navigate('AddEditing')} size={40} style={styles.icon2}>
             <Icon name="form" size={35} color="rgba(146, 69, 236, 1)" />
             </TouchableOpacity>
           </View>

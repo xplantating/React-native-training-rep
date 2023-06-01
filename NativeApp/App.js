@@ -6,6 +6,7 @@ import {NavigationContainer} from '@react-navigation/native';
 
 import HomeScrean from './src/components/Home';
 import AddScrean from './src/routs/add';
+import AddEditing from './src/routs/editing';
 
 const Stack = createNativeStackNavigator();
 
@@ -21,6 +22,10 @@ export default function App() {
             name="AddScrean" 
             component={AddScrean}
         />
+        <Stack.Screen
+          name='AddEditing'
+          component={AddEditing}
+          />
       </Stack.Navigator>
       </NavigationContainer>
 
