@@ -1,14 +1,20 @@
 import React from "react";
 import { StyleSheet, View, TouchableOpacity  } from "react-native";
 import { Text } from 'react-native-elements';
+import { useNavigation } from '@react-navigation/native';
+
+
+
 export default function Header(prop) {
+    const navigation = useNavigation();
     return(
         <View style={styles.container}>
             <Text style={styles.text}>
                 Learning language app
             </Text>
             <View style={styles.circlebutton}>
-                <TouchableOpacity
+                <TouchableOpacity onPress={() =>
+                navigation.navigate('AddScrean')}
                 style={styles.roundButton}>
                     <Text style={styles.button}>+</Text>
                 </TouchableOpacity>

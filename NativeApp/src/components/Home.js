@@ -4,10 +4,13 @@ import { Card, ListItem, Text } from 'react-native-elements';
 import homeData from './homeData';
 import Icon from 'react-native-vector-icons/AntDesign';
 import { BackgroundImage } from 'react-native-elements/dist/config';
+import Header from './Header';
 
 const MyIcon = <Icon name="delete" size={30} color="red" />;
 export default function Home() {
   return (
+    <View style={styles.main}>
+      <Header />
     <ScrollView style={styles.container}>
       {homeData.map((row) => (
         <Card key={row} containerStyle={styles.card}>
@@ -28,11 +31,19 @@ export default function Home() {
         </Card>
       ))}
     </ScrollView>
+    </View>
   );
 }
 const styles = StyleSheet.create({
+  main: {
+    height: '100%',
+    width: '100%',
+    textAlign: 'center',
+    justifyContent: 'center',
+    display: 'flex',
+  },
   container: {
-    flex: 1,
+    marginLeft: 15,
     textAlign: 'center',
     marginTop: 100,
   },
